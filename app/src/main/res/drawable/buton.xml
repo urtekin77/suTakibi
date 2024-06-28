@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>  <!--belgenin XML sürümünü ve karakter kodlamasını belirtir -->
+<!--selector öğesi, belirli durumlara (örneğin, basıldığında veya odaklandığında) karşılık
+ gelen farklı drawable öğelerini içerebilen bir konteynerdir -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"> <!-- rectangle dikdörtgen şeklinde bir drawable tanımlar -->
+            <solid android:color="@color/acikMavi"/> <!-- buton rengini turuncu yapar -->
+            <corners android:radius="50dp"/> <!-- butonun köşelerini 50 dp yuvarlıklık yapar -->
+        </shape>
+    </item>
+</selector>

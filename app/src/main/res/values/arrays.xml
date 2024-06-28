@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cinsiyet_array">
+        <item>Kız</item>
+        <item>Erkek</item>
+    </string-array>
+    <string-array name="fiziksel_aktivite_array">
+        <item>Düşük Aktivite</item>
+        <item>Orta Aktivite</item>
+        <item>Yüksek Aktivite</item>
+    </string-array>
+    <string-array name="cevresel_kosul_array">
+        <item>Soğuk İklim</item>
+        <item>Ilıman İklim</item>
+        <item>Sıcak İklim</item>
+    </string-array>
+    <string-array name="saglik_durumu_array">
+        <item>Normal Durum</item>
+        <item>Hamilelik</item>
+        <item>Emzirme</item>
+        <item>Hastalık</item>
+    </string-array>
+</resources>

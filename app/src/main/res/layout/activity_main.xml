@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp">
+
+            <Spinner
+                android:id="@+id/kullanici_spinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/kullaniciEkle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/add"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Günlük su tüketimi"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <FrameLayout
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/circle" />
+
+                        <TextView
+                            android:id="@+id/progressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="50%"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/gerekliSu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.5 L"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:text="  /  "
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/ictgiSu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.2 L"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Su ekle:"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/suGiris"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:hint="0.4" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="L"
+                            android:textSize="23sp"
+                            android:layout_marginEnd="25dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sugirisButon"
+                            android:layout_width="85dp"
+                            android:layout_height="40dp"
+                            android:text="Ekle"
+                            android:background="@drawable/blue_button"
+                            android:layout_marginStart="15dp"
+                            android:layout_margin="2dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"
+                        android:text="Kullanıcı bilgileri: " />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Kilo:"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/kilo"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:hint="62.4" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:text="kg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Boy:"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/boy"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:hint="1.60" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:text="m" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Yaş:"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/yas"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:hint="20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Sağlık Durumu:"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/saglikDurumu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:entries="@array/saglik_durumu_array" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="Cinsiyet:" />
+
+                            <Spinner
+                                android:id="@+id/cinsiyet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:entries="@array/cinsiyet_array" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="Fiziksel Aktivite:" />
+
+                            <Spinner
+                                android:id="@+id/fizikselAktivite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:entries="@array/fiziksel_aktivite_array" />
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="Çevresel Koşul:" />
+
+                            <Spinner
+                                android:id="@+id/cevreselKosul"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:entries="@array/cevresel_kosul_array" />
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/guncelle"
+                        android:layout_width="125dp"
+                        android:layout_height="50dp"
+                        android:text="Güncelle"
+                        android:background="@drawable/blue_button"
+                        android:layout_marginStart="15dp"
+                        android:layout_margin="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"
+                        android:text="Su raporları:  " />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="120dp"
+                        android:id="@+id/suRaporuButon"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/blue_button"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Su RaporU" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_margin="10dp"
+                        android:text="Kullanıcı Silme:" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="120dp"
+                        android:id="@+id/kullaniciSilme"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/blue_button"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Kullanıcıyı Sil" />
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
