@@ -52,9 +52,6 @@ Sistem, **Firebase Realtime Database** kullanarak gerçek zamanlı veri senkroni
 
 ### Mobil Uygulama Teknolojileri
 
-
-## 📱 Mobil Uygulama Teknolojileri
-
 | Katman              | Teknoloji/Ürün              | Açıklama                                 |
 |---------------------|-----------------------------|------------------------------------------|
 | IDE & Geliştirme    | Android Studio              | Uygulama geliştirme ortamı               |
