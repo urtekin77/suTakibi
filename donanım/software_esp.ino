@@ -8,17 +8,17 @@
 
  
 
-const char* ssid = "HUAWEI nova 8i"; 
+const char* ssid = "SSID"; 
 
-const char* password = "gamze2002"; 
+const char* password = "PASSWORD"; 
 
-#define DEVICE_ID  "artKdrAvbpE34qdf357" 
+#define DEVICE_ID  "DEVICE_ID" 
 
  
 
-#define FIREBASE_HOST "gomuluproject-1c459-default-rtdb.firebaseio.com" 
+#define FIREBASE_HOST "FIREBASE_HOST" 
 
-#define FIREBASE_AUTH "B7H4mEy5wa6usNYlkrR07WAeKJR5f3qNW8vAvRDl" 
+#define FIREBASE_AUTH "FIREBASE_AUTH" 
 
  
 
