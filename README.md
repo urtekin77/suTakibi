@@ -72,14 +72,14 @@ Sistem, **Firebase Realtime Database** kullanarak gerçek zamanlı veri senkroni
 ## 🔌 Donanım Bağlantı Şeması
 
 <div align="center">
-  <img src="https://github.com/urtekin77/suTakibi/blob/master/images/WhatsApp Image 2025-08-28 at 20.53.34.jpeg" alt="Donanım Bağlantı Şeması" width="350"/>
+  <img src="https://github.com/urtekin77/suTakibi/blob/master/images/WhatsApp Image 2025-08-28 at 20.53.34.jpeg" alt="Donanım Bağlantı Şeması" width="500"/>
 
 </div>
 ---
 
 ## 📊 Proje Blok Diyagramı
 <div align="center">
-  <img src="https://github.com/urtekin77/suTakibi/blob/master/images/WhatsApp Image 2025-08-28 at 20.53.33.jpeg" alt="Proje Blok Diyagramı" width="350"/>
+  <img src="https://github.com/urtekin77/suTakibi/blob/master/images/WhatsApp Image 2025-08-28 at 20.53.33.jpeg" alt="Proje Blok Diyagramı" width="500"/>
 
 </div>
 ---
